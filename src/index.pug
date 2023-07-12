@@ -1,0 +1,33 @@
+doctype html
+head
+  include ./templates/essentials/_es.meta.pug
+  include ./templates/essentials/_es.headsource.pug
+  title Trattoria Viva Napoli - Salzkotten
+body
+  include ./images/svg.pug
+  header
+    include ./templates/structure/_header.pug
+    .sep-main-index
+      include ./templates/hero-header.pug
+    
+
+  main 
+
+      .separator
+        include ./templates/content-welcome.pug
+      .separator
+        include ./templates/_content-food.pug
+      .separator
+       include ./templates/content-openinghours.pug
+      .separator
+        include ./templates/content-team.pug
+      .separator  
+       .container
+          include ./templates/content-testimonials.pug
+  footer
+      include ./templates/structure/_footer.pug
+
+
+  include ./templates/essentials/_es.endsource.pug
+
+  

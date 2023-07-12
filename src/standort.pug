@@ -1,0 +1,22 @@
+doctype html
+head
+  include ./templates/essentials/_es.meta.pug
+  include ./templates/essentials/_es.headsource.pug
+  title Trattoria Viva Napoli Salzkotten - Wo ihr uns findet
+body
+    include ./images/svg.pug
+    header
+        include ./templates/structure/_sub-header.pug
+            h2.fw-bolder.text-uppercase.m-0 Route
+    
+    main
+        .sep-main 
+
+            include ./templates/content-adress.pug
+            include ./templates/content-navi.pug 
+        .separator
+            include ./templates/content-openinghours.pug
+    footer
+        include ./templates/structure/_footer.pug
+
+    include ./templates/essentials/_es.endsource.pug

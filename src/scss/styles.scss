@@ -1,0 +1,506 @@
+$primary: #2c5e14;
+
+@import "bootstrap/scss/bootstrap";
+
+// ------------- General ------------//
+* {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 20px;
+}
+.bg-white {
+  background-color: white;
+}
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.sep-main {
+  padding-top: 15rem;
+}
+.sep-main-index {
+  padding-top: 10rem;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.separator {
+  padding: 1rem 0;
+}
+
+h1 {
+  color: white;
+  font-family: "Amsterdam";
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: "Amsterdam";
+  background: linear-gradient(360deg, #2c5e14 1.71%, #a8cf95 86.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 4rem;
+  padding-bottom: 3px;
+  line-height: 1.5;
+  .sub {
+    font-family: "Inter";
+  }
+}
+h3 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 160%;
+  /* or 38px */
+  margin: 0;
+  color: #b73951;
+}
+
+.prime-bg {
+  background: linear-gradient(218.09deg, #dffcd2 2.93%, #fff8e3 100.06%);
+}
+button .icons:hover {
+  fill: white;
+}
+button:hover {
+  .icons {
+    fill: white;
+  }
+}
+
+// ----------- Header ---------- //
+
+.scroll-down {
+  transform: translateY(-100rem);
+  transition: all 6s ease-in-out;
+}
+.scroll-up {
+  transform: translateY(0);
+  transition: all 650ms ease-in-out;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.nav-item {
+  padding: 0 0.5rem;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.invisible-area {
+  position: absolute;
+  margin-top: -400;
+}
+.logo-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.logo {
+  width: 200px;
+  padding: 1rem;
+}
+#icon-color {
+  --color-stop: #2c5e14;
+  --color-bot: #a8cf95;
+}
+.icons {
+  fill: url(#icon-color);
+  margin: 0.2rem;
+}
+.icons:hover {
+  fill: #2c5e14;
+}
+.icon-section {
+  right: 4.5rem;
+  display: flex;
+}
+
+// ------ Heroimages ------ //
+
+.hero {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(../images/hero.jpg) center no-repeat;
+  background-size: cover;
+  height: 15rem;
+  background-position: top;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-speisen {
+  display: flex;
+  top: 3rem;
+  position: sticky;
+
+  h2 {
+    color: white;
+    -webkit-text-fill-color: white;
+  }
+}
+.antipasti {
+  z-index: 10;
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-antipasti.jpg);
+}
+.pasta {
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-pasta.jpg);
+  z-index: 20;
+}
+.pizza {
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-pizza.jpg);
+  z-index: 30;
+}
+.fleisch {
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-pasta.jpg);
+  z-index: 40;
+}
+.fisch {
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-fisch.jpg);
+  z-index: 50;
+}
+.desserts {
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-dolci.jpg);
+  z-index: 60;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10rem;
+}
+.item {
+  border-top: #2c5e14 1px solid;
+}
+.row-items {
+  height: 100%;
+
+  padding: 3rem 0 10rem;
+}
+
+// ----------- Main ---------- //
+
+.img-section-left {
+  background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
+  padding: 1rem 0.5rem;
+  height: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.img-section-right {
+  background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
+  padding: 1rem 0.5rem;
+  height: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 800px) {
+  .parallax {
+    min-height: 6rem;
+    background-attachment: unset;
+    background-position: top;
+  }
+
+  .img-section-left,
+  .img-section-right,
+  .txt-section {
+    background: none;
+    padding: 0;
+    height: auto;
+    margin: 0;
+    position: static;
+    .img {
+      width: 400px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .wrap {
+    display: flex;
+    margin: 0;
+  }
+}
+.menu {
+  position: absolute;
+  bottom: 2rem;
+}
+.wrap {
+  display: flex;
+  margin: 5rem 0 5rem 0;
+}
+.txt-section {
+  padding: 2rem;
+}
+.cta {
+  width: 100%;
+  padding: 0.5rem;
+}
+.team {
+  width: 100%;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+}
+table th,
+td {
+  padding: 0.5rem 0.5rem;
+}
+.box {
+  padding: 3.5rem 0;
+}
+
+.food {
+  padding-left: 3rem;
+  margin-top: -2rem;
+}
+
+.card-header-foot {
+  height: 0.5rem;
+  background-color: white;
+}
+.card-header {
+  background-color: #f8f8f8;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  svg {
+    fill: none;
+  }
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 1rem;
+  z-index: 10;
+  height: 100%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  min-height: 17rem;
+}
+
+.roundimg {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.citation-left,
+.citation-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.citation-left {
+  left: 2rem;
+  top: 8rem;
+}
+.citation-right {
+  right: 2rem;
+  bottom: 16rem;
+}
+.quote-left,
+.quote-right {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.quote-left {
+  background-image: url("../images/quotation-left.svg");
+}
+.quote-right {
+  background-image: url("../images/quotation-right.svg");
+}
+
+.img-food {
+  width: 800px;
+}
+.boxed {
+  left: 0;
+  bottom: 30px;
+  width: 75%;
+  padding-top: 0.5rem;
+  background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
+  padding-bottom: 0.5rem;
+}
+.boxed-r {
+  right: 0;
+  bottom: 30px;
+  padding-left: 1.5rem;
+  width: 75%;
+  padding-top: 0.75rem;
+  background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
+}
+
+.food-text {
+  padding: 1rem 2rem;
+  justify-content: flex-end;
+  .mobile-block {
+    display: block;
+  }
+}
+.sub {
+  h2 {
+    font-family: "Inter";
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+.back {
+  width: 2rem;
+}
+.btn-back {
+  align-items: center;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 450px) {
+  .carousel {
+    h3 {
+      font-size: 70%;
+    }
+    p {
+      font-size: 85%;
+    }
+  }
+}
+@media (max-width: 775px) {
+  .icon-section {
+    bottom: 0;
+  }
+  .carousel {
+    h3,
+    p {
+      font-size: 80%;
+    }
+    .carousel-caption {
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .sep-main {
+    padding-top: 10rem;
+  }
+  .logo-sub {
+    display: none;
+  }
+  .box {
+    padding: 1rem 0;
+  }
+  .citation-left,
+  .citation-right {
+    display: none;
+  }
+  .carousel {
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .food-text {
+    display: none;
+  }
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 350px) {
+  .boxed,
+  .boxed-r {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .food-back-left,
+  .food-back-right {
+    background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
+  }
+
+  .img-food {
+    display: flex;
+    position: relative;
+    bottom: 2rem;
+    width: 400px;
+    height: 400px;
+  }
+  .left {
+    justify-content: flex-end;
+  }
+  .right {
+    justify-content: flex-start;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .mobile-block {
+    display: flex;
+  }
+}
+.card-header {
+  .nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+.card-header-foot {
+  height: 2.5rem;
+  background-color: white;
+  position: sticky;
+  top: 2.5rem;
+}

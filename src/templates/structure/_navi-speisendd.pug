@@ -1,0 +1,21 @@
+.card.text-center
+  .sticky-top.py-1.card-header
+    ul#navkarte.nav.nav-tabs.card-header-tabs
+      li.nav-item
+        a.nav-link(aria-current='true' href='#antipasti') Vorspeisen
+      li.nav-item
+        a.nav-link(href='#pizza') Pizza
+      li.nav-item
+        a.nav-link(href='#pasta') Pasta
+      li.nav-item
+        a.nav-link(href='#') Fleischgerichte
+      li.nav-item
+        a.nav-link(href='#') Fisch‚
+      li.nav-item
+        a.nav-link(href='#dolci') Nachspeisen
+      li.nav-item
+        a.nav-link.disabled Drinks
+  .card-header-foot
+  .card-body
+    .scrollspy(data-bs-spy='scroll' data-bs-target='#navkarte' data-bs-root-margin='0px 0px -40%' data-bs-smooth-scroll='true' tabindex='0')
+        include ../content-speisen.pug
