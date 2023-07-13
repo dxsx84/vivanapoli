@@ -17,10 +17,11 @@ module.exports = {
       Fonts: path.join(__dirname, "./src/fonts/"),
       JS: path.join(__dirname, "./src/js/"),
       CSS: path.join(__dirname, "./src/scss/"),
+      Downloads: path.join(__dirname, "./src/downloads/"),
     },
   },
 
-  mode: "development",
+  mode: "production",
   entry: {
     // define Pug files here
     index: "./src/index.pug", // => dist/index.html
@@ -75,6 +76,15 @@ module.exports = {
           filename: "assets/img/[name].[hash:8][ext]",
         },
       },
+      {
+        test: /\.(pdf)$/,
+        type: "asset/resource",
+        generator: {
+          // output filename of images
+          filename: "assets/downloads/[name].[hash:8][ext]",
+        },
+      },
+
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: "asset/resource",

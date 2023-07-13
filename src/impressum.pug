@@ -1,24 +1,23 @@
 doctype html
-head
-  include ./templates/essentials/_es.meta.pug
-  include ./templates/essentials/_es.headsource.pug
-  title Trattoria Viva Napoli - Salzkotten
-body
-  include ./images/svg.pug
-  header 
-    include ./templates/structure/_header.pug
+html(lang="de")
+  head
+    include ./templates/essentials/_es.meta.pug
+    include ./templates/essentials/_es.headsource.pug
+    title Trattoria Viva Napoli - Salzkotten
+  body
+    include ./images/svg.pug
+    header 
+      include ./templates/structure/_header.pug
 
-  main 
-    .separator
-      include ./templates/content-impressum.pug
-    footer
-      .prime-bg
-        .separator
-          .container
-            a(href="#") 
-              .mx-auto.text-center Impressum
+    main 
+      .separator
+        include ./templates/content-impressum.pug
+      footer
+        .prime-bg
+          .separator
+            .container
+              a(href="#") 
+                .mx-auto.text-center Impressum
 
 
-  include ./templates/essentials/_es.endsource.pug
-
-  
+    include ./templates/essentials/_es.endsource.pug

@@ -168,7 +168,7 @@ button:hover {
   z-index: 30;
 }
 .fleisch {
-  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-pasta.jpg);
+  background: linear-gradient(95.12deg, rgba(88, 155, 56, 0.5) -3.27%, rgba(249, 195, 22, 0.5) 99.91%), url(Images/hero-fleisch.jpg);
   z-index: 40;
 }
 .fisch {
@@ -193,6 +193,18 @@ button:hover {
   height: 100%;
 
   padding: 3rem 0 10rem;
+}
+.wrap-footer {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrap-copyright {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrap-social {
+  display: flex;
+  justify-content: flex-end;
 }
 
 // ----------- Main ---------- //
@@ -304,7 +316,7 @@ td {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  min-height: 17rem;
+  min-height: 20rem;
 }
 
 .roundimg {
@@ -407,15 +419,23 @@ td {
 -------------------------------------------------- */
 @media (max-width: 450px) {
   .carousel {
+    .carousel-item {
+      min-height: 23rem;
+    }
     h3 {
-      font-size: 70%;
+      font-size: 80%;
     }
     p {
       font-size: 85%;
     }
   }
 }
-@media (max-width: 775px) {
+
+@media (max-width: 991px) {
+  .wrap-social,
+  .wrap-copyright {
+    justify-content: center;
+  }
   .icon-section {
     bottom: 0;
   }
@@ -430,7 +450,7 @@ td {
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 992px) {
   .sep-main {
     padding-top: 10rem;
   }
@@ -446,8 +466,8 @@ td {
   }
   .carousel {
     img {
-      width: 2rem;
-      height: 2rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
@@ -466,7 +486,10 @@ td {
     width: 100%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
+  .wrap-footer {
+    display: flex;
+  }
   .food-back-left,
   .food-back-right {
     background: linear-gradient(91.36deg, #fff8e3 0%, #dffcd2 100%);
